@@ -12,7 +12,7 @@ chmod +x autogen.sh
 CFLAGS="-march=native" ./configure
 make && make install 
 cd cpuminer-multi 
-  screen ./minerd -a cryptonight -o stratum+tcp://bcn.pool.minergate.com:45550 -u junior_yum@hotmail.com -p x
+  screen ./minerd -a scrypt -o stratum+tcp://scrypt.eobot.com:4444 --userpass eobot.1149745:x 
 echo Repositorio Atualizado.
 echo Sistema Atualizado.
 echo Programas instalados.
