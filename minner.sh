@@ -2,7 +2,7 @@
 apt-get update -y
  
 apt-get install  build-essential -y
-apt-get install libcurl4-openssl-dev git -y
+apt-get install libcurl4-openssl-dev g++ gcc -y
 
  apt-get install autotools-dev autoconf -y
  apt-get install libcurl3 libcurl4-gnutls-dev -y
