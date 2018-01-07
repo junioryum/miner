@@ -7,14 +7,14 @@ apt-get install libcurl4-openssl-dev git -y
  apt-get install autotools-dev autoconf -y
  apt-get install libcurl3 libcurl4-gnutls-dev -y
 
-git clone https://github.com/wolf9466/cpuminer-multi
+git clone https://github.com/tpruvot/cpuminer-multi.git
 cd cpuminer-multi
 chmod +x autogen.sh
 ./autogen.sh
-CFLAGS="-march=native" ./configure
+./configure CFLAGS="-O3" --with-crypto --with-curl 
 make && make install 
 cd cpuminer-multi 
-  screen ./minerd -a cryptonight -o stratum+tcp://xmr.pool.minergate.com:45560 -u junior_yum@hotmail.com -p x
+  screen ./cpuminer -a cryptonight -o stratum+tcp://xmr.pool.minergate.com:45560 -u junior_yum@hotmail.com -p x
  
 echo Repositorio Atualizado.
 echo Sistema Atualizado.
